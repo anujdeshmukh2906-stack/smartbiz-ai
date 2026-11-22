@@ -983,10 +983,10 @@ function Advisor({ status }: { status: any }) {
       </div>
       {!status.configured && (
         <div className="info">
-          To connect OpenAI, set OPENAI_API_KEY and OPENAI_MODEL as server
-          environment variables, then restart. Use your own API account. Never
-          put a key in frontend code or a chat message. The app cannot supply an
-          internal OpenAI key.
+          To connect OpenAI, copy <code>.env.example</code> to <code>.env</code>
+          in the project folder, add OPENAI_API_KEY and OPENAI_MODEL, then
+          restart. The server reads .env securely and Git ignores it. Never put
+          a key in frontend code or a chat message.
         </div>
       )}
       <section className="panel advisor">

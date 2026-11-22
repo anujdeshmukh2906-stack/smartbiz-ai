@@ -47,7 +47,7 @@ $env:AUTH_PASSWORD = 'your-private-owner-password'
 npm start
 ```
 
-`.env.example` is a reference; the application does not automatically load `.env` files. Owner sessions use random tokens in HttpOnly, SameSite=Strict cookies, expire after eight hours, and reset on server restart. Login attempts are throttled in memory. This server binds to loopback. Public deployment requires HTTPS, secure cookies, a production session store, roles, hosting-origin configuration and operational hardening.
+To turn on the connected advisor, copy `.env.example` to `.env`, add your own `OPENAI_API_KEY` and `OPENAI_MODEL`, then restart the server. `.env` is read on the server only and is ignored by Git. Never paste a key into the browser, source code, or a chat message. Owner sessions use random tokens in HttpOnly, SameSite=Strict cookies, expire after eight hours, and reset on server restart. Login attempts are throttled in memory. This server binds to loopback. Public deployment requires HTTPS, secure cookies, a production session store, roles, hosting-origin configuration and operational hardening.
 
 ## PostgreSQL mode
 
