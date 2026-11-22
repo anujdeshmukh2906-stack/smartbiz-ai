@@ -1,0 +1,148 @@
+textarea {
+  font: inherit;
+  border: 1px solid #dbe4df;
+  border-radius: 8px;
+  padding: 13px;
+  resize: vertical;
+  color: #284338;
+  background: #fff;
+  line-height: 1.8;
+}
+textarea:focus {
+  outline: 2px solid #8bc3aa;
+  outline-offset: 1px;
+}
+.checklist {
+  margin: 5px 0 22px;
+  padding-left: 20px;
+  color: #68867a;
+  font-size: 12px;
+  line-height: 2.6;
+}
+.order-fields {
+  margin-top: 23px;
+  align-items: end;
+}
+.order-fields > button {
+  height: 39px;
+  margin-bottom: 1px;
+}
+.receiving-dialog {
+  width: 730px;
+  max-width: 100%;
+  margin: 25px auto;
+  padding: 27px;
+}
+.receive-line {
+  border-bottom: 1px solid #e4eeea;
+  margin-bottom: 22px;
+  padding-bottom: 8px;
+}
+.receive-line > strong {
+  display: block;
+  margin-bottom: 14px;
+  color: #426457;
+  font-size: 13px;
+}
+.negative {
+  color: #b25c48 !important;
+}
+.answer-text {
+  white-space: pre-wrap;
+  margin-top: 15px !important;
+}
+.advisor-answer > div {
+  min-width: 0;
+}
+.advisor-prompts {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+.advisor-prompts > span {
+  margin-right: 4px;
+  color: #68867a;
+  font-size: 11px;
+  font-weight: 650;
+}
+.advisor-prompts button {
+  padding: 7px 10px;
+  border-color: #d5e7df;
+  border-radius: 999px;
+  background: #f7fbf8;
+  color: #477260;
+  font-size: 10px;
+  line-height: 1.35;
+}
+.advisor-answer small {
+  font-size: 10px;
+  line-height: 1.8;
+  margin-top: 12px;
+}
+.evidence {
+  border: 1px solid #e0eae6;
+  border-radius: 9px;
+  padding: 15px;
+  margin-top: 20px;
+  color: #739084;
+  font-size: 12px;
+}
+.evidence summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.evidence pre {
+  max-height: 400px;
+  overflow: auto;
+  padding: 17px;
+  background: #f6faf7;
+  border-radius: 7px;
+  font-size: 10px;
+  margin-top: 15px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.operations-caption {
+  font-size: 10px;
+  color: #8ba497;
+}
+.pagination {
+  padding: 15px;
+}
+.receiving-dialog .panel-title {
+  align-items: flex-start;
+}
+.row-actions {
+  flex-wrap: wrap;
+}
+.section-stats strong {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 760px) {
+  .receiving-dialog {
+    margin: 10px auto;
+    padding: 20px;
+  }
+  .order-fields {
+    grid-template-columns: 1fr 1fr;
+  }
+  .order-fields > label:nth-child(1),
+  .order-fields > label:nth-child(3) {
+    grid-column: 1/-1;
+  }
+  .row-actions button {
+    font-size: 9px;
+  }
+  .ai-hero {
+    gap: 20px;
+  }
+  .ai-hero > svg {
+    display: none;
+  }
+  .checklist {
+    font-size: 11px;
+    line-height: 2.2;
+  }
+}

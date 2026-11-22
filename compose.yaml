@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: smartbiz
+      POSTGRES_PASSWORD: smartbiz
+      POSTGRES_DB: smartbiz
+    ports:
+      - "5432:5432"
+    volumes:
+      - smartbiz_pg:/var/lib/postgresql/data
+volumes:
+  smartbiz_pg:
